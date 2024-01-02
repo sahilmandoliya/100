@@ -1,5 +1,5 @@
-export default function Index(){
-    const [typed, setTyped]=useState("");
+export default function Home(){
+  const [typed, setTyped]=useState("");
   const [isSame, setIsSame]=useState(false);
   const para="This is the text div";
 
@@ -16,7 +16,7 @@ export default function Index(){
     <>
       <div>{para}</div>
       <input onChange={setTypedFunc} /> 
-      {isSame && `Yes there both are same :)`}
+      {isSame && `both para and typed are same :)`}
     </>
   )
 }
